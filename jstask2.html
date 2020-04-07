@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task</title>
+    <script>
+        // Defining the arrays 
+       
+        let data1 = {Principal: 2500, time: 1.8}
+        let data2 = {Principal: 1000, time: 5 }
+        let data3 = {Principal: 3000, time: 1 }
+        let data4= {Principal: 2000, time: 3 }
+       
+        // Writing out the function 
+        function interestCalculator(output) {}
+
+        // However, to calculate interest, rate must be determined...
+
+         let rate1 =0 
+         let rate2= 0 
+         let rate3 =0
+         let rate4 =0
+
+         // By stating the following conditions
+         
+         // For Data 1
+
+        if ((data1['Principal'] >= 2500) && ((data1)['time'] > 1) && (data1['time'] < 3)){
+            rate1 =3
+        }
+        else if (data1['Principal'] >= 2500 && data1['time'] >= 3){
+            rate1 = 4
+        }
+        else if(data1['Principal'] < 2500 || data1['time'] <= 1){
+            rate1 = 2
+        }
+        else {
+            rate1 = 1
+        }
+
+        // For Data 2
+
+        if ((data2['Principal'] >= 2500) && ((data2)['time'] > 1) && (data2['time'] < 3)){
+            rate2 =3
+        }
+        else if (data2['Principal'] >= 2500 && data2['time'] >= 3){
+            rate2 = 4
+        }
+        else if(data2['Principal'] < 2500 || data2['time'] <= 1){
+            rate2 = 2
+        }
+        else {
+            rate2 = 1
+
+        }
+
+        // For Data 3
+
+        if ((data3['Principal'] >= 2500) && ((data3)['time'] > 1) && (data3['time'] < 3)){
+            rate3 =3
+        }
+        else if (data3['Principal'] >= 2500 && data3['time'] >= 3){
+            rate3 = 4
+        }
+        else if(data3['Principal'] < 2500 || data3['time'] <= 1){
+            rate3 = 2
+        }
+        else {
+            rate3 = 1
+
+        }
+
+        // For Data 4
+
+        if ((data4['Principal'] >= 2500) && ((data4)['time'] > 1) && (data4['time'] < 3)){
+            rate4 =3
+        }
+        else if (data4['Principal'] >= 2500 && data4['time'] >= 3){
+            rate4 = 4
+        }
+        else if(data4['Principal'] < 2500 || data4['time'] <= 1){
+            rate4 = 2
+        }
+        else {
+            rate4 = 1
+        }
+       
+        // Now calculating the rate of interest for each individual objects
+        // Using the formula principal * rate * time
+        // Bringing back the function
+
+        function interestCalculator(output) {}
+
+        interest1 =(data1['Principal'] * rate1 * data1['time'] / 100) 
+        interest2 =(data2['Principal'] * rate2 * data2['time'] /100) 
+        interest3 =(data3['Principal'] * rate3 * data3['time'] / 100) 
+        interest4 =(data4['Principal'] * rate4 * data4['time'] /100) 
+        console.log(output);
+    
+        // passing in the above function to our new object called 'interestData'
+
+        let interest1 =0 
+        let interest2 =0
+        let interest3 =0 
+        let interest4 =0
+        function interestCalculator(output) {
+        
+        let interestData1 = console.log ({Principal: data1['Principal'], rate: rate1, time: data1['time'], interest: interest1})
+            console.log(output)
+        let interestData2 = console.log ({Principal: data2['Principal'], rate: rate2, time: data2['time'], interest: interest2})
+            console.log(output)
+        let interestData3 = console.log ({Principal: data3['Principal'], rate: rate3, time: data3['time'], interest: interest3})
+            console.log(output)
+        let interestData4 = console.log ({Principal: data4['Principal'], rate: rate4, time: data4['time'], interest: interest4})
+            return output
+            }
+            let pass = "The Principal, rate , time and interest are"
+                interestCalculator(pass)
+    </script>
