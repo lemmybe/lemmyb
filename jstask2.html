@@ -11,6 +11,15 @@
         let data2 = {Principal: 1000, time: 5 }
         let data3 = {Principal: 3000, time: 1 }
         let data4= {Principal: 2000, time: 3 }
+
+        // or simply written as
+
+        let data = [
+            {Principal: 2500, time: 1.8},
+            {Principal: 1000, time: 5 },
+            {Principal: 3000, time: 1 },
+            {Principal: 2000, time: 3 }
+    ]
        
         // Writing out the function 
         function interestCalculator(output) {}
@@ -90,7 +99,7 @@
         // Using the formula principal * rate * time
         // Bringing back the function
 
-        function interestCalculator(output) {}
+        function interestCalculator(output) {
 
         interest1 =(data1['Principal'] * rate1 * data1['time'] / 100) 
         interest2 =(data2['Principal'] * rate2 * data2['time'] /100) 
@@ -100,11 +109,6 @@
     
         // passing in the above function to our new object called 'interestData'
 
-        let interest1 =0 
-        let interest2 =0
-        let interest3 =0 
-        let interest4 =0
-        function interestCalculator(output) {
         
         let interestData1 = console.log ({Principal: data1['Principal'], rate: rate1, time: data1['time'], interest: interest1})
             console.log(output)
@@ -113,8 +117,10 @@
         let interestData3 = console.log ({Principal: data3['Principal'], rate: rate3, time: data3['time'], interest: interest3})
             console.log(output)
         let interestData4 = console.log ({Principal: data4['Principal'], rate: rate4, time: data4['time'], interest: interest4})
-            return output
-            }
-            let pass = "The Principal, rate , time and interest are"
-                interestCalculator(pass)
+            console.log(output)
+           
+            return "output"
+        }
+        let x = "The Principal, rate , time and interest are..."
+                interestCalculator(x)
     </script>
