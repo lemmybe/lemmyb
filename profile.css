@@ -1,0 +1,138 @@
+html,body {
+    height:110%
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+img {
+    max-width: 100%;
+   
+}
+
+body {
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    background-image: url(background.jpg);
+    background-size: cover;
+    color: white;
+
+}
+
+.background_img {
+
+}
+
+.profile_wrap {
+    text-align: center;
+
+
+}
+
+.profile_photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    margin-bottom: -1rem;
+    box-shadow: 0 25px, 50px, -12px;
+    border: 1px solid #ddd;
+    padding: -5px;
+    
+
+}
+
+.profile_info h1 {
+    font-size: 50px;
+    display: inline-block;
+    
+    font-weight: 500;
+    position: relative;
+    color: white;
+}
+
+.profile_intro {
+    padding: 1rem 10px 1rem;
+    line-height: 1.5;
+
+}
+
+.pre_contact{
+    margin-top: 2rem;
+
+}
+.h2 {
+    font: normal;
+    font-family:'Charmonman', cursive;
+
+}
+
+.form-input {
+    margin: 1rem;
+
+}
+
+.frm-txt {
+        background-color: white;
+        border:2px solid;
+        padding:8px 2rem;
+        width: 30%;
+        font-size: .875rem;
+        color: black;
+        border-radius: 99rem;
+        box-shadow: blanchedalmond;
+}
+
+.profile_contact {
+
+}
+
+.profile_contact a{
+    color: white;
+    margin-top: 0rem;
+
+}
+
+.contact {
+    display: inline-block;
+    background-color: black;
+    padding: 8px 1rem;
+    color: black;
+    border-radius: 99rem;
+    border: 2px solid;
+    box-shadow: blanchedalmond;
+    width: 30%;
+}
+
+.line {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid white;
+    margin-top: 4rem;
+  }
+
+.follow {
+    font-style: normal;
+    margin: 1rem;
+}
+
+.social_links {
+    margin-top: -1rem;
+    list-style: none;
+}
+
+.social_links  li {
+    display: inline-block;
+    padding: 0.5px;
+
+}
+
+.social_links a {
+    font-size: ;
+}
