@@ -7,7 +7,7 @@
 
      var display = [];
         
-        for (let i=1; i<=x; i++){
+        for (let i=1; i<=x; i=i+1){
           if (i%2===0 && i%3===0 && i%5===0){
             display.push("yu-gi-oh");
           }else if (i%2===0 && i%3===0){
@@ -16,6 +16,8 @@
             display.push("yu-oh");
           }else if (i%3===0 && i%5===0){
             display.push("gi-oh");
+          }else if (i%5===0){
+            display.push("oh");
           }else if (i%3===0){
             display.push('gi');
           }else if (i%2===0){
@@ -28,6 +30,7 @@
       return display;
     }
     name(100);
+    name (10);
      
   </script>
   
