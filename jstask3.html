@@ -3,28 +3,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>javascript</title> 
   <script>
-     function name(num);
+    function name(x){
 
-     var x = 1;
+     var display = [];
         
-        while (x<=100){
-          if (x%2===0 && x%3===0 && x%5===0){
-            console.log("yu-gi-oh");
-          }else if (x%2===0 && x%3===0){
-            console.log("yu-gi");
-          }else if (x%3===0){
-            console.log('gi');
-          }else if (x%2===0){
-            console.log("yu");
+        for (let i=1; i<=x; i++){
+          if (i%2===0 && i%3===0 && i%5===0){
+            display.push("yu-gi-oh");
+          }else if (i%2===0 && i%3===0){
+            display.push("yu-gi");
+          }else if (i%2===0 && i%5===0){
+            display.push("yu-oh");
+          }else if (i%3===0 && i%5===0){
+            display.push("gi-oh");
+          }else if (i%3===0){
+            display.push('gi');
+          }else if (i%2===0){
+            display.push("yu");
           }else {
-            console.log(x)
+            display.push(i);
           }
-          (x+=1);
         }
-        return [];
-      }
-      let x = name(100);
-      console.log(x);
+      console.log(display);
+      return display;
+    }
+    name(100);
+     
   </script>
   
   
