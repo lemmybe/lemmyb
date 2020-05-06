@@ -1,68 +1,55 @@
-<!DOCTYPE html>
-<html  lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile page</title> 
-    <link rel="stylesheet" type="text/css" href="profile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-     <div class="background_img">
-
-        <div class="profile_wrap">
-            <img src="cute.jpg" alt="profile" class="profile_photo">
-            <div class="profile_info">
-                <h1>I'M LEMMYBE</h1>
-                <P class="profile_intro">
-                  Hello! My name is Omisade Emmanuel, I'm an Awka based Front end developer</br>
-                  and interface designer. Originally from Osun State, born on the 5th of November more than two and half decades ago. I work as</br>
-                  an administrator by day and a developer by night. Hometown is at Ile-Ife.(ps. They don't know me as 'lemmy' there)
-                </P>
-                  I have a diverse set of skills, ranging from html, csss, javascript and also designs skills using</br>
-                  adobe XD, photoshop and corel draw. I also create mindblowing logos for brands. I pass time with movies, music and games.</br>
-                  
-                  <p class="pre_contact">
-                     <h2> Got any gig?</h2>
-                     <form class="form-input" action="processform.php" method="POST">
-
-                        <label for="Full Name">Full Name</label><br/>
-                        <input type="text" name="First Name" class="frm-txt"/><br/>
-                        
-                        <label for="Email Address"> Email Address</label><br/>
-                        <input type="email" name="Email Address"  class="frm-txt" required/><br/>
-            
-                        <label for="Phone Number">Phone Number</label><br/>
-                        <input type="text" name="Phone Number" class="frm-txt"/><br/>
-                          </p>
-
-                     </form>
-                     
+<!DOCTYPE HTML>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="quiz.css">
+    <body>
+        <div class="main-container">
+            <div class="options-container">
+                <div class="quiz-title">
+                    <h2>The CRYPTO quiz</h2><h4>Welcome to test your knowledge on cryptocurrency</h4>
+                </div>
+                <div class="question-number">
+                    <h4>Question <span class= "question-num-value">1</span> of <span class="allQuestions"></span></h4>
+                </div>
+                   
+                    <div class="question">
+                       
+                    </div>
+                    <div class="options">
+                        <div id="0" class="option1" onclick="check(this)"></div>
+                        <div id="1" class="option2" onclick="check(this)"></div>
+                        <div id="2" class="option3" onclick="check(this)"></div>
+                        <div id="3" class="option4" onclick="check(this)"></div>
+                    </div>
                 
-                
-  
-                  <div class="profile_contact">
-                      <a href= "#" class="contact"> Get in touch</a>
-                      
-                      <hr class="line">
-                      <div class="follow">
-                        <h5>follow on social</h5>
-                      </div>
-                     
-                      <ul class="social_links">
-                          <a href= "#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                          <li><a href= "#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                          <li><a href= "#"><i class="fa fa-instagram fa-2x"></i></a></li>
-                      </ul>
-                  </div>
+                <div class="button">
+                    <button type="button" class="btn" onclick="loadNextQuestion();">Next</button>
+                </div>
             </div>
-             
-        </div>
+            <div class="tracker">
+
+
+
+            </div>
+           </div>  
+           <div class="quiz-ends">
+            <div class="box">
+                <h1>
+                    You Tried!</br>
+                    Your score is <span class="correct-ans"></span> 3 out of<span></span>5!</span> </br>
+                    You can do better
+                   </h1>
+                     <button type="button" onclick="tryagain()"> </br>
+                        Try Again</button>
+              
+            </div>
+
+           </div>
+
+        </div>  
   
-
-
-     </div>
-  </body>
+   <script src="quiz.js"></script>
+    </body>
 </html>
