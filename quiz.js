@@ -3,6 +3,8 @@ const options = document.querySelector(".options").children;
 const trackanswerAll = document.querySelector(".tracker");
 const questionSpn = document.querySelector(".question-num-value");
 const questionTotal = document.querySelector(".allQuestions");
+const correctAnswer = document.querySelector ("correct-ans");
+const totalQuestion2 = document.querySelector ("total-question");
 const question = document.querySelector(".question");
 const opt1 = document.querySelector(".option1");
 const opt2 = document.querySelector(".option2");
@@ -12,6 +14,7 @@ let questionIndex;
 let index=0;
 let array= [];
 let arr=[];
+let score=0;
 
 
 
@@ -51,6 +54,8 @@ function check(element) {
     if(element.id==questions[questionIndex].ans){
         element.classList.add("correct");
         trackanswerSymbol("correct");
+        score++
+        console.log("score:"+score)
     }else {
         element.classList.add("wrong");
         trackanswerSymbol("wrong");
@@ -147,12 +152,19 @@ function loadNextQuestion() {
           load();
           arr.push(questionIndex);
         }
-        console.log("arr:"+arr)
+        
         array.push(selectedNumber);
     }
 }
-function QuizEnds() {
+function quizEnds() {
+ document.querySelector(".quiz-ends").classList.add("show");
+ correctAnswer.innerHTML=score;
+ totalQuestion2.innerHTML=questions.length;
+    
+}
 
+function tryAgain() {
+    window.location.reload();
     
 }
 
